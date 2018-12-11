@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="#00000000"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginVertical="10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="노래 이름을 입력해 주세요"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <EditText
+                android:id="@+id/serachEdit"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="노래이름"
+                android:layout_marginLeft="10dp"
+                />
+            <Button
+                android:id="@+id/serachBtn"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="검색"
+                android:textSize="20dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginVertical="10dp"
+        >
+        <TextView
+            android:id="@+id/titleContentText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20dp"
+            android:textColor="#a9000000"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:id="@+id/otherContentText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="19dp"
+            android:layout_margin="10dp"
+            />
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"></View>
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:text="삭제"
+            android:textSize="20dp"
+            android:layout_gravity="right"
+            />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
